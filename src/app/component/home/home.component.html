@@ -1,1 +1,270 @@
-<p>home works!</p>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+    <mat-card class="example-card">
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-header class="main-card-header">
+        <mat-card-title>Jone Smith</mat-card-title>
+        <mat-card-subtitle>CFA, CIC</mat-card-subtitle>
+        <mat-card-subtitle><strong>Premimum member</strong></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-icon>school</mat-icon>
+        <span>Insureance Agent, Attorney, Accounttant</span>
+      </mat-card-content>
+      <hr />
+      <mat-card-actions>
+        <mat-icon color="accent">email</mat-icon>
+        <h2 color="accent">Send an Email</h2>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <!-- Right -->
+  <div class="flex-item-right">
+    <mat-card>
+      <mat-card-header class="main">
+        <span class="section">Business Details</span>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-grid-list cols="2" rowHeight="100px" class="main_section" >
+          <mat-grid-tile id="left-sidebar" class="first_section">
+            <mat-icon>group</mat-icon>
+            <span>Profile</span>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            <button mat-raised-button class="btn-button" color="accent">Edit Profile</button>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Name:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            Mary , jason & Hodge of Attorney
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Domain:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            www.mjhatattorenys.com
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Gender:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            Male
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Date of Birth:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            8th June 1979
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Phone:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            +8654381234
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Location:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            12 street, Silicon Valiey Avenue NE, Huntsville
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+
+
+<!-- <div class="flex-container">  <div class="flex-item-left">
+    <mat-card class="example-card">
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-header class="card-header">
+        <mat-card-title>Jone Smith</mat-card-title>
+        <mat-card-subtitle>CFA, CIC</mat-card-subtitle>
+        <mat-card-subtitle><strong>Premimum member</strong></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-icon>school</mat-icon>
+        <span>Insureance Agent, Attorney, Accounttant</span>
+      </mat-card-content>
+      <hr />
+      <mat-card-actions>
+        <mat-icon color="accent">email</mat-icon>
+        <h2 color="accent">Send an Email</h2>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="flex-item-right">
+    <mat-card>
+      <div class="card-header">
+        <span>Business Details</span>
+      </div>
+      <div class="main_section">
+        <div class="first">
+         <mat-icon>person</mat-icon><span>Profile</span>
+        </div>
+        <button class="btn-button">Edit Profile</button>
+      </div>
+
+          </mat-card>
+  </div>
+
+</div>
+
+
+
+
+
+<mat-grid-list cols="1" rowHeight="500px">
+        <mat-grid-tile>
+            <div class="example-container">
+              <mat-form-field appearance="fill" class="width-50">
+                <mat-label>First Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill" class="width-50 ml-2">
+                <mat-label>Surname</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <br>
+              <mat-form-field appearance="fill" class="width-100">
+                <mat-label>Email address</mat-label>
+                <input matInput placeholder="Ex. pat@example.com">
+              </mat-form-field>
+              <br>
+              <mat-form-field appearance="fill" class="width-100">
+                <mat-label>Enter password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+              <br>
+              <label id="example-radio-group-label">Gender: </label>
+              <br><br>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Male</mat-radio-button>
+                <mat-radio-button class="example-radio-button" value="2">Female</mat-radio-button>
+                <mat-radio-button class="example-radio-button" value="3">Custom</mat-radio-button>
+              </mat-radio-group>
+              <br><br>
+              <label id="example-radio-group-label">Date of birth: </label>
+              <br><br>
+              <mat-form-field appearance="fill" class="width-25">
+                <mat-label>Day</mat-label>
+                <mat-select>
+                  <mat-option [value]="6">
+                   26
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill" class="width-25 ml-1">
+                <mat-label>Month</mat-label>
+                <mat-select>
+                  <mat-option [value]="6">
+                   26
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill" class="width-25 ml-1">
+                <mat-label>Year</mat-label>
+                <mat-select>
+                  <mat-option [value]="6">
+                   26
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+        </mat-grid-tile>
+        </mat-grid-list>
+
+
+  <div class="flex-item-right">
+    <mat-card>
+      <mat-card-header class="main">
+        <span class="section">Business Details</span>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-grid-list cols="2" rowHeight="100px" class="main_section" >
+          <mat-grid-tile id="left-sidebar" class="first_section">
+            <mat-icon>group</mat-icon>
+            <span>Profile</span>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            <button mat-raised-button class="btn-button" color="accent">Edit Profile</button>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Name:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            Mary , jason & Hodge of Attorney
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Domain:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            www.mjhatattorenys.com
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Gender:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            Male
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Date of Birth:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            8th June 1979
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Phone:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            +8654381234
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Location:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            12 street, Silicon Valiey Avenue NE, Huntsville
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+-->

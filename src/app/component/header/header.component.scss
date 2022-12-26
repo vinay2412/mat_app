@@ -1,0 +1,110 @@
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 75px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+.spacer {
+  flex: 1 auto;
+}
+a.main {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  padding: 18px;
+  margin: 0px;
+}
+a {
+  color: #000;
+  display: contents;
+  text-decoration: none;
+}
+a mat-icon {
+  position: relative;
+  right: 10px;
+}
+
+.example-header-image {
+  background-image: url("../../../assets/8.jfif");
+  width: 35px;
+  position: relative;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.btn-button {
+  background: red;
+  color: white;
+  margin: 8px;
+  border: none;
+  width: 9%;
+  height: 30px;
+}
+.btn-button mat-icon {
+  position: relative;
+  right: 8px;
+}
+.btn-button span {
+  position: relative;
+  top: -7px;
+}
+
+@media screen and (max-width: 800px) {
+  .mat-toolbar-row,
+  .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 75px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .spacer {
+    flex: 1 auto;
+  }
+  a.main {
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    padding: 18px;
+    margin: 0px;
+  }
+  a {
+    color: #000;
+    display: contents;
+    text-decoration: none;
+  }
+  a mat-icon {
+    position: relative;
+    right: 10px;
+  }
+
+  .example-header-image {
+    background-image: url("../../../assets/8.jfif");
+    width: 35px;
+    position: relative;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .btn-button {
+    background: red;
+    color: white;
+    margin: 8px;
+    border: none;
+    padding-left: 20px;
+  }
+  .btn-button mat-icon {
+    position: relative;
+    right: 8px;
+  }
+  .btn-button span {
+    position: relative;
+    top: -7px;
+  }
+}

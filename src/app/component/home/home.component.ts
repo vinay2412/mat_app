@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { EditComponent } from '../edit/edit.component';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(private dialog: MatDialog) {
+
+  }
+  openDialog() {
+  this.dialog.open(EditComponent, {
+    width: '25%'
+  });
+  }
 }

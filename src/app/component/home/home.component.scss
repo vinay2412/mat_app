@@ -97,11 +97,11 @@ h2 {
   margin-top: 10px;
 }
 
-mat-card .main{
+mat-card .main {
   font-weight: 500;
-    margin: -9px;
-    background-color:  #9C6137;
-    color: #f1f1f1;
+  margin: -9px;
+  background-color: #9c6137;
+  color: #f1f1f1;
 }
 .mat-mdc-card-header {
   display: flex;
@@ -109,11 +109,29 @@ mat-card .main{
   justify-content: center;
 }
 
-mat-card-actions mat-icon{
+mat-card-actions mat-icon {
   color: #f30707;
 }
 
-mat-card-header.section{
- margin: 0px;
+mat-card-header.section {
+  margin: 0px;
 }
 
+mat-card-content.main_section {
+  display: flex;
+  justify-content: space-between;
+}
+mat-card-title.profile {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+mat-card-subtitle button {
+  position: relative;
+  left: 40rem;
+  background-color: red;
+    border: none;
+    color: white;
+    padding: 4px 13px 4px 18px;
+}

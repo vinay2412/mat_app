@@ -15,11 +15,19 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { EditComponent } from './component/edit/edit.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, EditComponent],
   imports: [
     BrowserModule,
+    MatListModule,
+    MatDatepickerModule,
+    MatSidenavModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
@@ -30,7 +38,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
+    MatDialogModule,
     MatGridListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

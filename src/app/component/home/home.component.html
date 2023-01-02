@@ -22,13 +22,39 @@
 
   <!-- Right -->
   <div class="flex-item-right">
+    <mat-card-content class="header">
+      Busness Details
+    </mat-card-content>
     <mat-card>
        <mat-card-content class="main_section">
-        <mat-card-title class="profile"><mat-icon>person</mat-icon>Profile</mat-card-title>
+        <mat-card-title class="profile"><mat-icon>person</mat-icon><h4>Profile</h4></mat-card-title>
         <mat-card-subtitle>
-          <button mat-raised-button type="button" class="btn btn-danger" (click)="openDialog()">Edit Profile</button>
+          <button mat-raised-button color="warn"(click)="openDialog()">Edit Profile</button>
         </mat-card-subtitle>
       </mat-card-content>
-
+      <mat-card-content class="main_first">
+        <mat-label>Name</mat-label>
+        <mat-card-subtitle class="main_title">Admin</mat-card-subtitle>
+      </mat-card-content>
+      <mat-card-content class="main_first">
+        <mat-label>Domain</mat-label>
+        <mat-card-subtitle class="main_title">welcome.com</mat-card-subtitle>
+      </mat-card-content>
+      <mat-card-content class="main_first">
+        <mat-label>Gender</mat-label>
+        <mat-card-subtitle class="main_title">Male</mat-card-subtitle>
+      </mat-card-content>
+      <mat-card-content class="main_first">
+        <mat-label>Date of Birth</mat-label>
+        <mat-card-subtitle class="main_title">01/12/2022</mat-card-subtitle>
+      </mat-card-content>
+      <mat-card-content class="main_first">
+        <mat-label>Phone</mat-label>
+        <mat-card-subtitle class="main_title">+919874563210</mat-card-subtitle>
+      </mat-card-content>
+      <mat-card-content class="main_first">
+        <mat-label>Location</mat-label>
+        <mat-card-subtitle class="main_title">Pune Mharastra</mat-card-subtitle>
+      </mat-card-content>
     </mat-card>
     </div>

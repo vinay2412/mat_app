@@ -10,8 +10,8 @@
 
 .flex-item-left {
   background-color: #f1f1f1;
-  padding: 10px;
-  flex: 30%;
+    padding: 10px;
+    flex: 30%;
 }
 
 .flex-item-right {
@@ -19,7 +19,12 @@
   padding: 10px;
   flex: 70%;
 }
-
+.header{
+background-color: burlywood;
+    color: black;
+    font-weight: 500;
+    text-align: start;
+}
 @media (max-width: 800px) {
   .flex-item-right,
   .flex-item-left {
@@ -121,17 +126,26 @@ mat-card-content.main_section {
   display: flex;
   justify-content: space-between;
 }
-mat-card-title.profile {
+
+h4 {
   position: absolute;
-  left: 20px;
-  top: 10px;
+  left: 50px;
+  top: 18px;
+  font-weight: 500;
 }
 
-mat-card-subtitle button {
+::ng-deep mat-card-content.mat-mdc-card-content.main_first {
+  display: flex;
   position: relative;
-  left: 40rem;
-  background-color: red;
-    border: none;
-    color: white;
-    padding: 4px 13px 4px 18px;
+  left: 35px;
+}
+
+::ng-deep mat-card-subtitle.mat-mdc-card-subtitle.main_title {
+  position: relative;
+    margin: 0 auto;
+}
+
+::ng-deep .mat-mdc-card-content:first-child {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

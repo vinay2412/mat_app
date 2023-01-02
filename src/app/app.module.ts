@@ -20,6 +20,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HomeComponent, EditComponent],
@@ -40,7 +42,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatRadioModule,
     MatDialogModule,
     MatGridListModule,
-
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

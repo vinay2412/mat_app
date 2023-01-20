@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { EditComponent } from '../edit/edit.component';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,7 +15,10 @@ export class HomeComponent {
   }
   openDialog() {
   this.dialog.open(EditComponent, {
-    width: '25%'
+    width: '70%'
   });
   }
+//   closeDialog(){
+//     this.dialogRef.close(); // <- Closes the dialog box
+// }
 }

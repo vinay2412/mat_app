@@ -16,8 +16,7 @@ img {
 
 a.main {
   display: flex;
-  padding: 15px;
-}
+  padding: 15px 9px;}
 
 a {
   color: #000;
@@ -27,7 +26,7 @@ a {
 
 a mat-icon {
   position: relative;
-  right: 10px;
+  // right: 10px;
 }
 
 .example-header-image {
@@ -44,7 +43,21 @@ a mat-icon {
   position: absolute;
   right: 35px;
 }
-
+.menu{
+  display: flex;
+}
+.menuMobile{
+  display: none;
+}
+button.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base {
+  display: none;
+}
+.logo {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: contents;
+}
 @media only screen and (max-width: 768px) {
 
   mat-card.mdc-card.example-card {
@@ -59,30 +72,72 @@ a mat-icon {
     display: flex;
     justify-content: flex-start;
     width: 90px;
+    position: relative;
   }
 
   img {
-    position: absolute;
+    position: relative;
     width: 15%;
     left: 15px;
   }
-}
-
-@media only screen and (max-width: 425px) {
-  /* For mobile phones: */
-
-  .last_section {
-    display: none;
-  }
-  a.main {
-    display: none;
-  }
-  img {
-    width: 35%;
+  mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+    flex-direction: column;
     position: relative;
-    left: 150px;
-  }
+    height: auto;
 }
+.menu, .menuMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.menu{
+  display: none;
+}
+button.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base {
+  display: block;
+  background: #c5bcbc;
+  top: 5px;
+}
+.logo{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #ccc;
+}
+.last_section {
+  display: none;
+}
+}
+@media screen and (max-width: 900px) {
+  mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+    position: relative;
+}
+img {
+  width: 100px;
+  left: 15px;
+}
+}
+
+// @media only screen and (max-width: 425px) {
+//   /* For mobile phones: */
+//   mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+//     height: auto;
+//     align-items: start;
+//     padding: 0;
+// }
+//   .last_section {
+//     display: none;
+//   }
+//   img {
+//     width: 35%;
+//     position: relative;
+//     left: 0;
+//   }
+
+// }
 
 
 @media only screen and (max-width: 320px) {
@@ -91,10 +146,7 @@ a mat-icon {
   img {
     position: relative;
     width: 40%;
-    left: 100px;
   }
 
-  .last_section {
-    display: none;
-  }
+
 }

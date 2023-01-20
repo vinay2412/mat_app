@@ -9,5 +9,9 @@ import { EditComponent } from '../edit/edit.component';
 })
 export class HeaderComponent {
 
+  isShow: boolean = false;
+  navtoggle(){
+    this.isShow = !this.isShow;
+  }
 
 }

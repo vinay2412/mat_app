@@ -1,16 +1,28 @@
- <mat-toolbar style="background-color: white;">
-  <img src="assets/1.png" />
+<mat-toolbar style="background-color: white;">
 
-  <div class="spacer"></div>
+  <div class="logo">
+    <img src="assets/1.png" />
+    <button mat-icon-button (click)="navtoggle()" fxShow="true" fxHide.gt-sm></button>
+  </div>
+
+<div class="spacer"></div>
+<div class="menu">
   <a mat-button [routerLink]="'/'" class="main"><mat-icon>home</mat-icon> Home</a>
   <a mat-button [routerLink]="'/'" class="main"><mat-icon>group</mat-icon>Trustees</a>
   <a mat-button [routerLink]="'/'" class="main"><mat-icon>person</mat-icon>Professionals</a>
   <a mat-button [routerLink]="'/'" class="main"><mat-icon>more_horiz</mat-icon>More</a>
+</div>
+<div class="menuMobile" *ngIf="isShow">
+  <a mat-button class="main"><mat-icon>home</mat-icon> Home</a>
+  <a mat-button class="main"><mat-icon>group</mat-icon>Trustees</a>
+  <a mat-button class="main"><mat-icon>person</mat-icon>Professionals</a>
+  <a mat-button class="main"><mat-icon>more_horiz</mat-icon>More</a>
+</div>
 
-  <div class="spacer"></div>
-  <div class="last_section">
-  <mat-icon>search</mat-icon>
-  <button mat-raised-button color="warn"><mat-icon>email</mat-icon>invite</button>
-  <div mat-card-avatar class="example-header-image"></div>
-  </div>
+<div class="spacer"></div>
+<div class="last_section">
+<mat-icon>search</mat-icon>
+<button mat-raised-button color="warn"><mat-icon>email</mat-icon>invite</button>
+<div mat-card-avatar class="example-header-image"></div>
+</div>
 </mat-toolbar>

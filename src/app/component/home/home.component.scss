@@ -1,143 +1,132 @@
 * {
   box-sizing: border-box;
 }
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  background: whitesmoke;
- }
-
-
-
-.flex-item-left {
-  padding: 10px;
-  flex: 30%;
-  .example-header-image {
-    background-image: url("../../../assets/8.jfif");
-    width: 140px;
-    position: relative;
-    top: 30px;
-    height: 140px;
-    border-radius: 50%;
-    margin: 0 auto;
-    .card-header {
-      padding-top: 50px;
-      text-align: center;
-      display: block;
-    }
-  }
-}
-.mat-mdc-card-header {
-  display: flex;
-  margin-top: 45px;
-  justify-content: center;
-}
-hr {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-span {
-  font-size: 15px;
-  position: relative;
-  padding: 15px;
-}
-mat-card mat-card-actions {
-  display: flex;
-  justify-content: center;
-  h2 {
-   font-size: 13px;
-   padding-left: 16px;
-   color: red;
-   margin-top: 10px;
-  }
-}
-mat-card-actions mat-icon {
-  color: #f30707;
-}
-
-.flex-item-right {
-  padding: 10px;
-  flex: 70%;
-  .header {
-    background-color: burlywood;
-    color: black;
-    font-weight: 500;
-    text-align: start;
-  }
-}
-h4 {
-  position: absolute;
-  top: 38px;
-  font-weight: 500;
-  display: flex;
-  width: 85px;
-  justify-content: space-between;
-}
-mat-card-content.main_section {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-}
-mat-label {
-  width: 140px;
-  text-align: initial;
-  margin-top: 5px;
-}
-.card_section {
-  border: 1px solid #ccc;
-  margin: 15px;
-  padding: 0 10px;
-}
-::ng-deep mat-card-content.mat-mdc-card-content.main_first {
-  display: flex;
-  top: 9px;
-  position: relative;
-}
-
-::ng-deep .mat-mdc-card-content:first-child {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-@media (max-width: 786px) {
-  .flex-item-right,
-  .flex-item-left {
-    flex: 100%;
-  }
-
-  mat-card-content.main_section{
+  .flex-container {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-right: -6px;
-}
+    flex-wrap: wrap;
+    text-align: center;
+    background: whitesmoke;
+  }
   .mainArea {
     width: 100%;
     display: flex;
-    padding: 0 70px;
-  }
-  .mat-mdc-card{
-    margin: 0 auto;
-  }
-}
+    padding: 0 90px;
+    }
+    .flex-item-left {
+      padding: 10px;
+      flex: 30%;
+      .example-header-image {
+        background-image: url("../../../assets/8.jfif");
+        width: 140px;
+        position: relative;
+        top: 30px;
+        height: 140px;
+        border-radius: 50%;
+        margin: 0 auto;
+        .card-header {
+          padding-top: 50px;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+    .mat-mdc-card-header {
+      display: flex;
+      margin-top: 45px;
+      justify-content: center;
+    }
+    hr {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    span {
+      font-size: 15px;
+      position: relative;
+      padding: 15px;
+    }
+    mat-card mat-card-actions {
+      display: flex;
+      justify-content: center;
+      h2 {
+        font-size: 13px;
+        padding-left: 16px;
+        color: red;
+        margin-top: 10px;
+      }
+    }
+    mat-card-actions mat-icon {
+      color: #f30707;
+    }
+    .flex-item-right {
+      padding: 10px;
+      flex: 70%;
+      .header {
+        background-color: burlywood;
+        color: black;
+        font-weight: 500;
+        text-align: start;
+      }
+    }
+    h4 {
+      position: absolute;
+      top: 38px;
+      font-weight: 500;
+      display: flex;
+      width: 85px;
+      justify-content: space-between;
+    }
+    mat-card-content.main_section {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+    }
+    mat-label {
+      width: 140px;
+      text-align: initial;
+      margin-top: 5px;
+    }
+    .card_section {
+      border: 1px solid #ccc;
+      margin: 15px;
+      padding: 0 10px;
+    }
+    ::ng-deep mat-card-content.mat-mdc-card-content.main_first {
+      display: flex;
+      top: 9px;
+      position: relative;
+    }
+    ::ng-deep .mat-mdc-card-content:first-child {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 
-.mainArea {
-  width: 100%;
-  display: flex;
-  padding: 0 70px;
-}
-
+   @media (max-width: 786px) {
+        .flex-item-right,
+        .flex-item-left {
+        flex: 100%;
+        }
+      mat-card-content.main_section {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        margin-right: -6px;
+      }
+      .mainArea {
+        width: 100%;
+        display: flex;
+        padding: 0 70px;
+      }
+      .mat-mdc-card {
+        margin: 0 auto;
+      }
+    }
 
 @media only screen and (max-width: 700px) {
   .mainArea {
     display: block;
     padding: 0px;
   }
-.flex-item-left{
-  width: 100%;
-}
-
-
+  .flex-item-left {
+    width: 100%;
+  }
 }

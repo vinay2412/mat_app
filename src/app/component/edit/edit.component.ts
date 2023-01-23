@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
-import { Router } from '@angular/router';
-import Swal from 'sweetalert2';
+import {Component, Inject} from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-edit',
@@ -9,14 +7,12 @@ import Swal from 'sweetalert2';
   styleUrls: ['./edit.component.scss']
 })
 export class EditComponent {
+  constructor(
+    public dialogRef: MatDialogRef<EditComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: FormData,
+  ) {}
 
-  constructor( public router : Router,
-    public dialogRef: MatDialogRef<EditComponent>){}
-
-  closeDialog() {
-      Swal.fire('Update Successfully.')
-      // this.errorMessage = "";
-      this.router.navigate(["/"]);
-      // this.successMessage = "Your account has been created. Please log in.";
+  closeDialog(): void {
+    this.dialogRef.close();
   }
 }

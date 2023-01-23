@@ -18,7 +18,4 @@ export class HomeComponent {
     width: '70%'
   });
   }
-//   closeDialog(){
-//     this.dialogRef.close(); // <- Closes the dialog box
-// }
 }

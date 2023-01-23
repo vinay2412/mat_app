@@ -58,21 +58,23 @@ button.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base {
   width: 100%;
   display: contents;
 }
-
-/* For mobile phones: */
 @media only screen and (max-width: 768px) {
+
   mat-card.mdc-card.example-card {
     margin: 0;
   }
+  /* For mobile phones: */
   .spacer {
     margin: auto;
   }
+
   .last_section {
     display: flex;
     justify-content: flex-start;
     width: 90px;
     position: relative;
   }
+
   img {
     position: relative;
     width: 15%;
@@ -82,48 +84,61 @@ button.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base {
     flex-direction: column;
     position: relative;
     height: auto;
-  }
-  .menu, .menuMobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .menu{
-   display: none;
- }
-  button.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base {
-    display: block;
-    background: #c5bcbc;
-    top: 5px;
-  }
-  .logo{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
+}
+.menu, .menuMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.menu{
+  display: none;
+}
+button.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base {
+  display: block;
+  background: #c5bcbc;
+  top: 11px;
+  width: 49px;
+  height: 38px;
+  right: 12px;
+}
+.logo{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
     width: 100%;
     height: 60px;
     border-bottom: 2px solid #ccc;
-  }
+}
+.last_section {
+  display: none;
+}
+}
+
+
+@media only screen and (max-width: 425px) {
+  /* For mobile phones: */
+  mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+    height: auto;
+    align-items: start;
+    padding: 0;
+}
   .last_section {
     display: none;
   }
-}
-
-@media screen and (max-width: 900px) {
-  mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+  img {
+    width: 35%;
     position: relative;
-}
-img {
-  width: 100px;
-  left: 15px;
-}
-}
+    left: 25px;
+  }
 
+}
 /* For mobile phones: */
 @media only screen and (max-width: 320px) {
   img {
     position: relative;
     width: 40%;
+    left: 25px;
   }
 }
+
